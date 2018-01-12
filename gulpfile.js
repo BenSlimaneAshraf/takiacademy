@@ -22,3 +22,5 @@ gulp.task('compass', function() {
     }))
     .pipe(gulp.dest('builds/development/css'))
 });
+
+gulp.task('default', ['js', 'compass']);
