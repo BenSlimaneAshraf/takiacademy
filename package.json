@@ -2,6 +2,7 @@
   "name": "takiacademy",
   "version": "1.0.0",
   "description": "taki academy",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BenSlimaneAshraf/takiacademy.git"
@@ -10,5 +11,8 @@
   "bugs": {
     "url": "https://github.com/BenSlimaneAshraf/takiacademy/issues"
   },
-  "homepage": "https://github.com/BenSlimaneAshraf/takiacademy#readme"
+  "homepage": "https://github.com/BenSlimaneAshraf/takiacademy#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
