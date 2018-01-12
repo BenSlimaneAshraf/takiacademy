@@ -1,0 +1,14 @@
+{
+  "name": "takiacademy",
+  "version": "1.0.0",
+  "description": "taki academy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenSlimaneAshraf/takiacademy.git"
+  },
+  "author": "ashrafbenslimane",
+  "bugs": {
+    "url": "https://github.com/BenSlimaneAshraf/takiacademy/issues"
+  },
+  "homepage": "https://github.com/BenSlimaneAshraf/takiacademy#readme"
+}
