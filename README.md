@@ -1,5 +1,2 @@
-#### Taki Academy :
--------------------
-###### Html
-###### Css
-###### Javascript
+Taki Academy :
+Url : https://takiacademy.herokuapp.com/
