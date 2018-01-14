@@ -64,6 +64,14 @@ gulp.task('connect', function() {
   });
 });
 
+gulp.task('serveprod', function() {
+  connect.server({
+    root: 'builds/production/',
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
+});
+
 gulp.task('html', function() {
   gulp.src('builds/development/*.html')
     .pipe(gulpif(env === 'production', minifyHTML()))
@@ -82,4 +90,4 @@ gulp.task('images', function() {
     .pipe(connect.reload())
 });
 
-gulp.task('default', ['html', 'js', 'compass', 'images', 'connect', 'watch']);
+gulp.task('default', ['html', 'js', 'compass', 'images', 'serveprod', 'connect', 'watch']);
