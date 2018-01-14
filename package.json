@@ -16,6 +16,8 @@
     "gulp": "^3.9.1",
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.1",
-    "gulp-connect": "^5.2.0"
+    "gulp-connect": "^5.2.0",
+    "gulp-if": "^2.0.2",
+    "gulp-uglify": "^3.0.0"
   }
 }
