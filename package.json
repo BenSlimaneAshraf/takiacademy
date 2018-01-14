@@ -2,9 +2,9 @@
   "name": "takiacademy",
   "version": "1.0.0",
   "description": "taki academy",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
