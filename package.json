@@ -2,7 +2,7 @@
   "name": "takiacademy",
   "version": "1.0.0",
   "description": "taki academy",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "start": "gulp"
   },
