@@ -1,1 +1,1 @@
-NODE_ENV=production gulp
+web: node node_modules/gulp/bin/gulp build
