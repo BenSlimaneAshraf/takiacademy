@@ -2,10 +2,6 @@
   "name": "takiacademy",
   "version": "1.0.0",
   "description": "taki academy",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BenSlimaneAshraf/takiacademy.git"
@@ -16,7 +12,6 @@
   },
   "homepage": "https://github.com/BenSlimaneAshraf/takiacademy#readme",
   "devDependencies": {
-    "express": "^4.16.2",
     "gulp": "^3.9.1",
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.1",
