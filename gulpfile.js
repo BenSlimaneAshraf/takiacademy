@@ -3,6 +3,8 @@ var gulp = require('gulp'),
     connect = require('gulp-connect'),
     compass = require('gulp-compass'),
     gulpif = require('gulp-if'),
+    imagemin = require('gulp-imagemin'),
+    pngcrush = require('imagemin-pngcrush'),
     minifyHTML = require('gulp-minify-html'),
     uglify = require('gulp-uglify');
 
@@ -52,6 +54,7 @@ gulp.task('watch', function() {
   gulp.watch(jsSources, ['js']);
   gulp.watch('components/sass/*.scss', ['compass']);
   gulp.watch('builds/development/*.html', ['html']);
+  gulp.watch('builds/development/images/**/*.*', ['images']);
 });
 
 gulp.task('connect', function() {
@@ -68,4 +71,15 @@ gulp.task('html', function() {
     .pipe(connect.reload())
 });
 
-gulp.task('default', ['html', 'js', 'compass', 'connect', 'watch']);
+gulp.task('images', function() {
+  gulp.src('builds/development/images/**/*.*')
+    .pipe(gulpif(env === 'production', imagemin({
+      progressive: true,
+      svgoPlugins: [{ removeViewBox: false }],
+      use: [pngcrush()]
+    })))
+    .pipe(gulpif(env === 'production', gulp.dest(outputDir + 'images')))
+    .pipe(connect.reload())
+});
+
+gulp.task('default', ['html', 'js', 'compass', 'images', 'connect', 'watch']);
