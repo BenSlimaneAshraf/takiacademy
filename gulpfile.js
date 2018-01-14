@@ -66,8 +66,8 @@ gulp.task('connect', function() {
 
 gulp.task('serveprod', function() {
   connect.server({
-    root: 'builds/production/',
-    port: process.env.PORT || 8080, // localhost:5000
+    root: outputDir,
+    port: process.env.PORT || 5000, // localhost:5000
     livereload: false
   });
 });
@@ -90,4 +90,4 @@ gulp.task('images', function() {
     .pipe(connect.reload())
 });
 
-gulp.task('default', ['html', 'js', 'compass', 'images', 'serveprod', 'connect', 'watch']);
+gulp.task('default', ['html', 'js', 'compass', 'images', 'connect', 'serveprod', 'watch']);
