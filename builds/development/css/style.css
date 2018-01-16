@@ -18,18 +18,28 @@ body {
 }
 
 header {
-  background-color: red;
+  background-color: #FCFCFC;
   position: fixed;
   right: 0;
   top: 0;
   left: 0;
-  height: 80px;
+  height: 120px;
   text-align: center;
+  z-index: 3;
+}
+
+header:after {
+  content: " ";
+  position: absolute;
+  bottom: 0px;
+  right: 78px;
+  left: 78px;
+  border-bottom: 2px solid #F5F4F4;
   z-index: 3;
 }
 
 footer {
-  background-color: yellow;
+  background-color: #FCFCFC;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -39,34 +49,68 @@ footer {
   z-index: 3;
 }
 
+footer:after {
+  content: " ";
+  position: absolute;
+  top: 0px;
+  right: 78px;
+  left: 78px;
+  border-bottom: 2px solid #F5F4F4;
+  z-index: 3;
+}
+
 nav {
-  background-color: orange;
+  background-color: #FCFCFC;
   position: fixed;
   right: 0;
-  top: 0;
-  bottom: 0;
-  padding: 80px 0;
+  top: 120px;
+  bottom: 80px;
   width: 80px;
   text-align: center;
   z-index: 2;
+}
+
+nav:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 78px;
+  left: 0;
+  background-color: #F5F4F4;
+  z-index: 3;
 }
 
 aside {
-  background-color: #cccccc;
+  background-color: #FCFCFC;
   position: fixed;
   left: 0;
-  top: 0;
-  bottom: 0;
+  top: 120px;
+  bottom: 80px;
   padding: 80px 0;
   width: 80px;
   text-align: center;
   z-index: 2;
 }
 
+aside:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 78px;
+  background-color: #F5F4F4;
+  z-index: 3;
+}
+
 article {
-  background-color: blue;
+  background-color: #FFFFFF;
   height: 2000px;
   text-align: center;
-  padding: 80px;
+  padding: 120px 80px 80px;
   z-index: 1;
+}
+article p {
+  padding: 0 40px;
 }
