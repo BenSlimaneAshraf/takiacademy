@@ -14,7 +14,7 @@
     "url": "https://github.com/BenSlimaneAshraf/takiacademy/issues"
   },
   "homepage": "https://github.com/BenSlimaneAshraf/takiacademy#readme",
-  "devDependencies": {
+  "dependencies": {
     "gulp": "^3.9.1",
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.1",
