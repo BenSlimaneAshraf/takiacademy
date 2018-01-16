@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
     connect = require('gulp-connect'),
@@ -60,6 +62,7 @@ gulp.task('watch', function() {
 gulp.task('connect', function() {
   connect.server({
     root: outputDir,
+    host: '0.0.0.0',
     livereload: false,
     port: process.env.PORT || 8080
   });
