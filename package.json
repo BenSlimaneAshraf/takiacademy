@@ -2,6 +2,9 @@
   "name": "takiacademy",
   "version": "1.0.0",
   "description": "taki academy",
+  "scripts":{
+    "start": "gulp"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BenSlimaneAshraf/takiacademy.git"
