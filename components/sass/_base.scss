@@ -20,3 +20,19 @@ body {
   font-family: $website-font;
   color: $black;
 }
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: $white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $blue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $black;
+}

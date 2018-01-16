@@ -19,6 +19,22 @@ body {
   color: #424242;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2BA7DF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #424242;
+}
+
 header {
   background-color: #FCFCFC;
   position: fixed;
