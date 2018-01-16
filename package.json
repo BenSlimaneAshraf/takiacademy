@@ -2,7 +2,7 @@
   "name": "takiacademy",
   "version": "1.0.0",
   "description": "taki academy",
-  "scripts":{
+  "scripts": {
     "start": "gulp connect"
   },
   "repository": {

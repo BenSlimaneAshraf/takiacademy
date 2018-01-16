@@ -86,5 +86,4 @@ gulp.task('images', function() {
     .pipe(connect.reload())
 });
 
-gulp.task('run', ['html', 'js', 'compass', 'images', 'connect', 'watch']);
-gulp.task('default', ['connect']);
+gulp.task('default', ['html', 'js', 'compass', 'images', 'connect', 'watch']);
