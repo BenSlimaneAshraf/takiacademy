@@ -29,7 +29,7 @@ if (env==='development') {
 }
 
 jsSources = [
-  'components/scripts/svg.js'
+  'components/scripts/svGet.js'
 ];
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];

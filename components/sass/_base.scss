@@ -36,3 +36,13 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: $default;
 }
+
+::-moz-selection { /* Code for Firefox */
+    color: $primary;
+    background: $main-background;
+}
+
+::selection {
+    color: $primary;
+    background: $main-background;
+}

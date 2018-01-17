@@ -1,6 +1,15 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var jQuery = require('jquery');
 
+jQuery(document).ready(function(){
+    jQuery('#svgfile1').load('../images/inbox.svg');
+    jQuery('#svgfile2').load('../images/notification.svg');
+    jQuery('#svgfile3').load('../images/search.svg');
+    jQuery('#svgfile4').load('../images/transactions.svg');
+    jQuery('#svgfile5').load('../images/boy.svg');
+    jQuery('#svgfile6').load('../images/logout.svg');
+});
+
 },{"jquery":2}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.2.1
