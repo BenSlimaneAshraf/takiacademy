@@ -92,7 +92,7 @@ nav {
   right: 0;
   top: 120px;
   bottom: 80px;
-  padding: 80px 0;
+  padding: 120px 0;
   width: 80px;
   text-align: center;
   z-index: 2;
@@ -115,7 +115,7 @@ aside {
   left: 0;
   top: 120px;
   bottom: 80px;
-  padding: 80px 0;
+  padding: 120px 0;
   width: 80px;
   text-align: center;
   z-index: 2;
@@ -171,7 +171,7 @@ article p {
   color: #2ba7df;
 }
 .header-navigation .item:active {
-  color: #2ba7df;
+  color: #424242;
 }
 
 .primary {
@@ -226,7 +226,7 @@ article p {
   color: #2ba7df;
 }
 .footer-navigation .item:active {
-  color: #2ba7df;
+  color: #424242;
 }
 
 .nav-navigation {
@@ -247,5 +247,26 @@ article p {
   fill: #2ba7df;
 }
 .nav-navigation .item:active {
-  fill: #df2b6d;
+  fill: #424242;
+}
+
+.aside-navigation {
+  font-size: 20px;
+  display: inline-block;
+  padding: 4px 8px;
+}
+.aside-navigation a {
+  text-decoration: none;
+  color: #424242;
+}
+.aside-navigation .item {
+  padding: 0 12px;
+  width: 40px;
+  fill: #424242;
+}
+.aside-navigation .item:hover {
+  fill: #2ba7df;
+}
+.aside-navigation .item:active {
+  fill: #424242;
 }
