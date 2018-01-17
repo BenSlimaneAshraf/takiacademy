@@ -92,7 +92,7 @@ nav {
   right: 0;
   top: 120px;
   bottom: 80px;
-  padding: 120px 0;
+  padding: 80px 0;
   width: 80px;
   text-align: center;
   z-index: 2;
@@ -115,7 +115,7 @@ aside {
   left: 0;
   top: 120px;
   bottom: 80px;
-  padding: 120px 0;
+  padding: 80px 0;
   width: 80px;
   text-align: center;
   z-index: 2;
@@ -233,6 +233,10 @@ article p {
   font-size: 20px;
   display: inline-block;
   padding: 4px 8px;
+  position: absolute;
+  top: 50%;
+  right: 4%;
+  transform: translateY(-50%);
 }
 .nav-navigation a {
   text-decoration: none;
@@ -254,6 +258,10 @@ article p {
   font-size: 20px;
   display: inline-block;
   padding: 4px 8px;
+  position: absolute;
+  top: 50%;
+  right: 14%;
+  transform: translateY(-50%);
 }
 .aside-navigation a {
   text-decoration: none;
