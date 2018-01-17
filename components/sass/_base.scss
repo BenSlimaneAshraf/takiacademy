@@ -18,7 +18,7 @@ body {
   padding-bottom: 6rem;
   min-height: 100%;
   font-family: $website-font;
-  color: $black;
+  color: $default;
 }
 
 ::-webkit-scrollbar {
@@ -26,13 +26,13 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: $white;
+    background: $content-background;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $blue;
+    background: $primary;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: $black;
+    background: $default;
 }

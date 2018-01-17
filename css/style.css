@@ -24,11 +24,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2BA7DF;
+  background: #2ba7df;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -36,7 +36,7 @@ body {
 }
 
 header {
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   position: fixed;
   right: 0;
   top: 0;
@@ -51,18 +51,17 @@ header:after {
   bottom: 0px;
   right: 78px;
   left: 78px;
-  border-bottom: 2px solid #F5F4F4;
+  border-bottom: 2px solid #f5f4f4;
   z-index: 3;
 }
 
 footer {
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   height: 80px;
-  text-align: center;
   z-index: 3;
 }
 
@@ -72,12 +71,12 @@ footer:after {
   top: 0px;
   right: 78px;
   left: 78px;
-  border-bottom: 2px solid #F5F4F4;
+  border-bottom: 2px solid #f5f4f4;
   z-index: 3;
 }
 
 nav {
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   position: fixed;
   right: 0;
   top: 120px;
@@ -94,12 +93,12 @@ nav:after {
   bottom: 0;
   right: 78px;
   left: 0;
-  background-color: #F5F4F4;
+  background-color: #f5f4f4;
   z-index: 3;
 }
 
 aside {
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   position: fixed;
   left: 0;
   top: 120px;
@@ -117,12 +116,12 @@ aside:after {
   bottom: 0;
   right: 0;
   left: 78px;
-  background-color: #F5F4F4;
+  background-color: #f5f4f4;
   z-index: 3;
 }
 
 article {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 2000px;
   text-align: center;
   padding: 120px 80px 80px;
@@ -143,30 +142,42 @@ article p {
   padding: 4px 8px;
 }
 
-.website-navigation {
+.header-navigation {
   font-size: 20px;
   display: inline-block;
   float: right;
   padding: 4px 8px;
 }
-.website-navigation a {
+.header-navigation a {
   text-decoration: none;
   color: #424242;
 }
-.website-navigation a:active {
-  color: #2BA7DF;
-  border-bottom: 3px solid #2BA7DF;
+.header-navigation a:active {
+  color: #2ba7df;
+  border-bottom: 3px solid #2ba7df;
 }
-.website-navigation .item {
+.header-navigation .item {
   padding: 0 12px;
 }
-.website-navigation .item:hover {
-  color: #2BA7DF;
-  border-bottom: 3px solid #2BA7DF;
+.header-navigation .item:hover {
+  color: #2ba7df;
+  border-bottom: 3px solid #2ba7df;
 }
 
-.blue {
-  color: #2BA7DF;
+.primary {
+  color: #2ba7df;
+}
+
+.secondary {
+  color: #df2b6d;
+}
+
+.default {
+  color: #424242;
+}
+
+.default-lighter {
+  color: #8f8c8c;
 }
 
 .bold {
@@ -175,4 +186,37 @@ article p {
 
 .website-header {
   padding: 38px 84px;
+}
+
+.website-footer {
+  padding: 20px 88px;
+}
+
+.website-copyright {
+  font-size: 16px;
+  display: inline-block;
+  position: absolute;
+  padding: 4px 8px;
+}
+
+.footer-navigation {
+  font-size: 16px;
+  display: inline-block;
+  float: right;
+  padding: 4px 8px;
+}
+.footer-navigation a {
+  text-decoration: none;
+  color: #424242;
+}
+.footer-navigation a:active {
+  color: #2ba7df;
+  border-bottom: 3px solid #2ba7df;
+}
+.footer-navigation .item {
+  padding: 0 12px;
+}
+.footer-navigation .item:hover {
+  color: #2ba7df;
+  border-bottom: 3px solid #2ba7df;
 }

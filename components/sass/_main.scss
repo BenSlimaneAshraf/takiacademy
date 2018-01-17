@@ -2,7 +2,7 @@
 // ==============
 
 header{
-  background-color: $gris;
+  background-color: $main-background;
   position: fixed;
   right: 0;
   top: 0;
@@ -17,18 +17,17 @@ header:after {
 	bottom: 0px;
 	right: 78px;
 	left: 78px;
-	border-bottom: 2px solid $light-gris;
+	border-bottom: 2px solid $main-border;
 	z-index: 3;
 }
 
 footer{
-  background-color: $gris;
+  background-color: $main-background;
   position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   height: 80px;
-  text-align: center;
   z-index: 3;
 }
 
@@ -38,12 +37,12 @@ footer:after {
 	top: 0px;
 	right: 78px;
 	left: 78px;
-	border-bottom: 2px solid $light-gris;
+	border-bottom: 2px solid $main-border;
 	z-index: 3;
 }
 
 nav{
-  background-color: $gris;
+  background-color: $main-background;
   position: fixed;
   right: 0;
   top: 120px;
@@ -60,12 +59,12 @@ nav:after {
   bottom: 0;
 	right: 78px;
 	left: 0;
-  background-color: $light-gris;
+  background-color: $main-border;
 	z-index: 3;
 }
 
 aside{
-  background-color: $gris;
+  background-color: $main-background;
   position: fixed;
   left: 0;
   top: 120px;
@@ -83,12 +82,12 @@ aside:after {
   bottom: 0;
 	right: 0;
 	left: 78px;
-  background-color: $light-gris;
+  background-color: $main-border;
 	z-index: 3;
 }
 
 article{
-  background-color: $white;
+  background-color: $content-background;
   height: 2000px;
   text-align: center;
   padding: 120px 80px 80px;
@@ -109,7 +108,7 @@ article{
   padding: 4px 8px;
 }
 
-.website-navigation{
+.header-navigation{
   font-size: 20px;
   display: inline-block;
   float: right;
@@ -117,25 +116,37 @@ article{
 
   a {
     text-decoration: none;
-    color: $black;
+    color: $default;
     &:active{
-      color: $blue;
-      border-bottom: 3px solid $blue;
+      color: $primary;
+      border-bottom: 3px solid $primary;
     }
   }
 
   .item{
     padding: 0 12px;
     &:hover{
-      color: $blue;
-      border-bottom: 3px solid $blue;
+      color: $primary;
+      border-bottom: 3px solid $primary;
     }
   }
 
 }
 
-.blue{
-  color: $blue;
+.primary{
+  color: $primary;
+}
+
+.secondary{
+  color: $secondary;
+}
+
+.default{
+  color: $default;
+}
+
+.default-lighter{
+  color: $default-lighter;
 }
 
 .bold{
@@ -144,4 +155,40 @@ article{
 
 .website-header{
   padding: 38px 84px;
+}
+
+.website-footer{
+  padding: 20px 88px;
+}
+
+.website-copyright{
+  font-size: 16px;
+  display: inline-block;
+  position: absolute;
+  padding: 4px 8px;
+}
+
+.footer-navigation{
+  font-size: 16px;
+  display: inline-block;
+  float: right;
+  padding: 4px 8px;
+
+  a {
+    text-decoration: none;
+    color: $default;
+    &:active{
+      color: $primary;
+      border-bottom: 3px solid $primary;
+    }
+  }
+
+  .item{
+    padding: 0 12px;
+    &:hover{
+      color: $primary;
+      border-bottom: 3px solid $primary;
+    }
+  }
+
 }
