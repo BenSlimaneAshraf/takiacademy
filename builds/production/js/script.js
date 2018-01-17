@@ -1,0 +1,1 @@
+var jQuery=require("jquery");jQuery("img.svg").each(function(){var r=jQuery(this),t=r.attr("id"),e=r.attr("class"),a=r.attr("src");jQuery.get(a,function(a){var i=jQuery(a).find("svg");void 0!==t&&(i=i.attr("id",t)),void 0!==e&&(i=i.attr("class",e+" replaced-svg")),i=i.removeAttr("xmlns:a"),r.replaceWith(i)},"xml")});
