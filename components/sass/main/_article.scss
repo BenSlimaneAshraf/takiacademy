@@ -1,0 +1,13 @@
+// article.scss
+// ==============
+
+.main-container{
+  background-color: $content-background;
+  height: 2000px;
+  text-align: center;
+  padding: 120px 80px 80px;
+  z-index: 1;
+  p{
+    padding: 0 40px;
+  }
+}

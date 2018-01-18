@@ -1,0 +1,56 @@
+// aside.scss
+// ==============
+
+.main-social{
+  background-color: $main-background;
+  position: fixed;
+  left: 0;
+  top: 120px;
+  bottom: 80px;
+  padding: 80px 0;
+  width: 80px;
+  text-align: center;
+  z-index: 2;
+}
+
+.main-social:after {
+    content: " ";
+	position: absolute;
+	top: 0;
+  bottom: 0;
+	right: 0;
+	left: 78px;
+  background-color: $main-border;
+	z-index: 3;
+}
+
+.social-menu{
+  font-size: 20px;
+  display:inline-block;
+  padding: 4px 8px;
+  position: absolute;
+  top: 50%;
+  right: 14%;
+  transform: translateY(-50%);
+
+  a {
+    text-decoration: none;
+    color: $default;
+    // &:active{
+    //   color: $primary;
+    // }
+  }
+
+  .item{
+    padding: 0 12px;
+    width: 40px;
+    fill: $default;
+    &:hover{
+      fill: $primary;
+    }
+    &:active{
+      fill: $default;
+    }
+  }
+
+}

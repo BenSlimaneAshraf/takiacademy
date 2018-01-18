@@ -1,0 +1,62 @@
+// footer.scss
+// ==============
+
+.main-footer{
+  background-color: $main-background;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  z-index: 3;
+}
+
+.main-footer:after {
+    content: " ";
+	position: absolute;
+	top: 0px;
+	right: 78px;
+	left: 78px;
+	border-bottom: 2px solid $main-border;
+	z-index: 3;
+}
+
+.footer-container{
+  padding: 20px 88px;
+}
+
+.footer-copyright{
+  font-size: 16px;
+  display: inline-block;
+  position: absolute;
+  padding: 4px 8px;
+}
+
+.footer-menu{
+  font-size: 16px;
+  display: inline-block;
+  float: right;
+  padding: 4px 8px;
+
+  a {
+    text-decoration: none;
+    color: $default;
+    // &:active{
+    //   color: $primary;
+    //   border-bottom: 3px solid $primary;
+    // }
+  }
+
+  .item{
+    padding: 0 12px;
+    &:hover{
+      color: $primary;
+      // border-bottom: 3px solid $primary;
+    }
+    &:active{
+      color: $default;
+      // border-bottom: 3px solid $primary;
+    }
+  }
+
+}

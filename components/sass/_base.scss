@@ -21,6 +21,26 @@ body {
   color: $default;
 }
 
+.primary{
+  color: $primary;
+}
+
+.secondary{
+  color: $secondary;
+}
+
+.default{
+  color: $default;
+}
+
+.default-lighter{
+  color: $default-lighter;
+}
+
+.bold{
+  font-weight: 700;
+}
+
 ::-webkit-scrollbar {
     width: 4px;
 }

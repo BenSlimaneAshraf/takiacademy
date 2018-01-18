@@ -1,0 +1,66 @@
+// header.scss
+// ==============
+
+.main-header{
+  background-color: $main-background;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 120px;
+  z-index: 3;
+}
+
+.main-header:after {
+    content: " ";
+	position: absolute;
+	bottom: 0px;
+	right: 78px;
+	left: 78px;
+	border-bottom: 2px solid $main-border;
+	z-index: 3;
+}
+
+.header-container{
+  padding: 38px 84px;
+}
+
+.header-logo{
+  width: 54px;
+}
+
+.header-title{
+  font-size: 22px;
+  display: inline-block;
+  position: absolute;
+  padding: 4px 8px;
+}
+
+.header-menu{
+  font-size: 20px;
+  display: inline-block;
+  float: right;
+  padding: 4px 8px;
+
+  a {
+    text-decoration: none;
+    color: $default;
+    // &:active{
+    //   color: $primary;
+    //   border-bottom: 3px solid $primary;
+    // }
+  }
+
+  .item{
+    padding: 0 12px;
+    &:hover{
+      color: $primary;
+      // border-bottom: 3px solid $primary;
+    }
+    &:active{
+      color: $default;
+      // border-bottom: 3px solid $primary;
+    }
+  }
+
+}

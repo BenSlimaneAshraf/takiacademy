@@ -1,7 +1,14 @@
 // style.scss
 // ==============
 
-//Core partials
+
+//core partials
 @import "variables";
 @import "base";
-@import "main";
+
+//main partials
+@import "main/header";
+@import "main/nav";
+@import "main/article";
+@import "main/aside";
+@import "main/footer";
