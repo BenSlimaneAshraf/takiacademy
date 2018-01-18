@@ -23,6 +23,12 @@
 
 .header-container{
   padding: 38px 84px;
+
+  a {
+    text-decoration: none;
+    color: $default;
+  }
+
 }
 
 .header-logo{

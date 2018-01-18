@@ -89,6 +89,10 @@ body {
 .header-container {
   padding: 38px 84px;
 }
+.header-container a {
+  text-decoration: none;
+  color: #424242;
+}
 
 .header-logo {
   width: 54px;
