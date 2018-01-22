@@ -9,6 +9,18 @@
   left: 0;
   height: 120px;
   z-index: 3;
+  @include break(0,319px) {
+    display: none;
+  }
+  @include break(320px) {
+    height: 60px;
+  }
+  @include break(1100px) {
+    height: 80px;
+  }
+  @include break(1600px) {
+    height: 120px;
+  }
 }
 
 .main-header:after {
@@ -19,10 +31,23 @@
 	left: 78px;
 	border-bottom: 2px solid $main-border;
 	z-index: 3;
+  @include break(320px,1100px) {
+    right: 0;
+    left: 0;
+  }
 }
 
 .header-container{
   padding: 38px 84px;
+  @include break(320px) {
+    padding: 10px 24px;
+  }
+  @include break(1100px) {
+    padding: 18px 84px;
+  }
+  @include break(1600px) {
+    padding: 38px 84px;
+  }
 
   a {
     text-decoration: none;
@@ -33,6 +58,15 @@
 
 .header-logo{
   width: 54px;
+  @include break(320px) {
+    width: 40px;
+  }
+  @include break(1100px) {
+    width: 48px;
+  }
+  @include break(1600px) {
+    width: 54px;
+  }
 }
 
 .header-title{
@@ -40,6 +74,18 @@
   display: inline-block;
   position: absolute;
   padding: 4px 8px;
+  @include break(320px) {
+    font-size: 18px;
+    padding: 2px 8px;
+  }
+  @include break(1100px) {
+    font-size: 20px;
+    padding: 6px 8px;
+  }
+  @include break(1600px) {
+    font-size: 22px;
+    padding: 4px 8px;
+  }
 }
 
 .header-menu{
@@ -47,6 +93,38 @@
   display: inline-block;
   float: right;
   padding: 4px 8px;
+  @include break(320px,719px) {
+    font-size: 16px;
+    padding: 4px 8px;
+    display: inline-grid;
+    background-color: $main-border;
+    border-radius: 20px;
+    text-align: center;
+    height: 40px;
+    overflow: hidden;
+    -webkit-transition: height 0.2s ease 0s; /* For Safari 3.1 to 6.0 */
+    transition: height 0.2s ease 0s;
+    z-index: 4;
+    &:hover{
+      height: 300px;
+      z-index: 4;
+    }
+  }
+  @include break(720px) {
+    font-size: 16px;
+    padding: 4px 8px;
+    display: inline-block;
+  }
+  @include break(1100px) {
+    font-size: 18px;
+    padding: 10px 8px;
+    display: inline-block;
+  }
+  @include break(1600px) {
+    font-size: 20px;
+    padding: 4px 8px;
+    display: inline-block;
+  }
 
   a {
     text-decoration: none;
@@ -59,6 +137,9 @@
 
   .item{
     padding: 0 12px;
+    @include break(320px) {
+      padding: 0 6px;
+    }
     &:hover{
       color: $primary;
       // border-bottom: 3px solid $primary;
@@ -69,4 +150,14 @@
     }
   }
 
+}
+
+.visible-xs{
+  @include break(720px) {
+    display: none;
+  }
+}
+
+.collapse{
+  padding-bottom: 18px;
 }

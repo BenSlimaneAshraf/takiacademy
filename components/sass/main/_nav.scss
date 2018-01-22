@@ -11,6 +11,9 @@
   width: 80px;
   text-align: center;
   z-index: 2;
+  @include break(0,319px) {
+    display: none;
+  }
 }
 
 .main-navigation:after {

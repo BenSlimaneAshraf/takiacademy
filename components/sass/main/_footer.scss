@@ -9,6 +9,9 @@
   left: 0;
   height: 80px;
   z-index: 3;
+  @include break(0,319px) {
+    display: none;
+  }
 }
 
 .main-footer:after {

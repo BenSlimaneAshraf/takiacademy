@@ -7,6 +7,9 @@
   text-align: center;
   padding: 120px 80px 80px;
   z-index: 1;
+  @include break(0,319px) {
+    display: none;
+  }
   p{
     padding: 0 40px;
   }
