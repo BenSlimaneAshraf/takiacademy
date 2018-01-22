@@ -21,6 +21,11 @@
   @include break(1600px) {
     height: 120px;
   }
+  .visible-xs{
+    @include break(720px) {
+      display: none;
+    }
+  }
 }
 
 .main-header:after {
@@ -150,12 +155,6 @@
     }
   }
 
-}
-
-.visible-xs{
-  @include break(720px) {
-    display: none;
-  }
 }
 
 .collapse{

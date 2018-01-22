@@ -12,6 +12,20 @@
   @include break(0,319px) {
     display: none;
   }
+  @include break(320px) {
+    height: 60px;
+  }
+  @include break(1100px) {
+    height: 80px;
+  }
+  @include break(1600px) {
+    height: 80px;
+  }
+  .hidden-xs{
+    @include break(0,560px) {
+      display: none;
+    }
+  }
 }
 
 .main-footer:after {
@@ -22,10 +36,20 @@
 	left: 78px;
 	border-bottom: 2px solid $main-border;
 	z-index: 3;
+  @include break(320px,1100px) {
+    right: 0;
+    left: 0;
+  }
 }
 
 .footer-container{
   padding: 20px 88px;
+  @include break(320px) {
+    padding: 12px 12px;
+  }
+  @include break(1100px) {
+    padding: 20px 88px;
+  }
 }
 
 .footer-copyright{
@@ -33,6 +57,9 @@
   display: inline-block;
   position: absolute;
   padding: 4px 8px;
+  @include break(320px,1100px) {
+    font-size: 12px;
+  }
 }
 
 .footer-menu{
@@ -40,6 +67,9 @@
   display: inline-block;
   float: right;
   padding: 4px 8px;
+  @include break(320px,1100px) {
+    font-size: 12px;
+  }
 
   a {
     text-decoration: none;
