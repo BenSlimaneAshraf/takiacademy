@@ -10,6 +10,18 @@
   @include break(0,319px) {
     display: none;
   }
+  @include break(320px) {
+    padding: 12px 12px 12px;
+    height: auto;
+  }
+  @include break(1100px) {
+    padding: 28px 80px 28px;
+    height: auto;
+  }
+  @include break(1600px) {
+    padding: 120px 80px 120px;
+    height: auto;
+  }
   p{
     padding: 0 40px;
   }

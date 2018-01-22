@@ -36,7 +36,7 @@
 	left: 78px;
 	border-bottom: 2px solid $main-border;
 	z-index: 3;
-  @include break(320px,1100px) {
+  @include break(320px,1099px) {
     right: 0;
     left: 0;
   }
