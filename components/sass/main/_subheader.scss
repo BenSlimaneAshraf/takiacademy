@@ -1,0 +1,75 @@
+// header.scss
+// ==============
+
+.main-subheader{
+  background-color: $subheader-background;
+  position: fixed;
+  right: 0;
+  top: 60px;
+  left: 0;
+  height: 120px;
+  z-index: 2;
+  text-align: center;
+
+  @include break(0,319px) {
+    display: none;
+  }
+  @include break(320px,1099px) {
+    height: 60px;
+  }
+  @include break(1100px) {
+    display: none;
+  }
+}
+
+.main-subheader:after {
+    content: " ";
+	position: absolute;
+	bottom: 0px;
+	right: 78px;
+	left: 78px;
+	border-bottom: 2px solid $main-border;
+	z-index: 3;
+}
+
+.subheader-container{
+  padding: 38px 84px;
+
+  a {
+    text-decoration: none;
+    color: $default;
+  }
+
+}
+
+.subheader-menu{
+  font-size: 20px;
+  display:inline-flex;
+  padding: 8px 8px;
+  position: absolute;
+  left: 50%;
+  top: 4%;
+  transform: translateX(-50%);
+
+  a {
+    text-decoration: none;
+    color: $default;
+    // &:active{
+    //   color: $primary;
+    //   border-bottom: 3px solid $primary;
+    // }
+  }
+
+  .item{
+    padding: 0 4px;
+    width: 46px;
+    fill: $default;
+    &:hover{
+      fill: $primary;
+    }
+    &:active{
+      fill: $default;
+    }
+  }
+
+}
