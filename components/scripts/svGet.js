@@ -9,10 +9,10 @@ jQuery(document).ready(function(){
     jQuery('.girl').load('../images/nav/girl.svg');
     jQuery('.logout').load('../images/nav/logout.svg');
 
-    jQuery('#facebook').load('../images/social/facebook.svg');
-    jQuery('#twitter').load('../images/social/twitter.svg');
-    jQuery('#youtube').load('../images/social/youtube.svg');
-    jQuery('#instagram').load('../images/social/instagram.svg');
-    jQuery('#google-plus').load('../images/social/google-plus.svg');
-    jQuery('#sharethis').load('../images/social/sharethis.svg');
+    jQuery('.facebook').load('../images/social/facebook.svg');
+    jQuery('.twitter').load('../images/social/twitter.svg');
+    jQuery('.youtube').load('../images/social/youtube.svg');
+    jQuery('.instagram').load('../images/social/instagram.svg');
+    jQuery('.google-plus').load('../images/social/google-plus.svg');
+    jQuery('.sharethis').load('../images/social/sharethis.svg');
 });
