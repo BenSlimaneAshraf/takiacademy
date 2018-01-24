@@ -100,6 +100,11 @@ body {
     display: none;
   }
 }
+@media (min-width: 0) and (max-width: 720px) {
+  .main-header .hidden-xs {
+    display: none;
+  }
+}
 
 .main-header:after {
   content: " ";
@@ -276,6 +281,16 @@ body {
 }
 @media (min-width: 1100px) {
   .main-subheader {
+    display: none;
+  }
+}
+@media (min-width: 720px) {
+  .main-subheader .visible-xs {
+    display: none;
+  }
+}
+@media (min-width: 0) and (max-width: 720px) {
+  .main-subheader .hidden-xs {
     display: none;
   }
 }

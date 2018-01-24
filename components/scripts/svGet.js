@@ -8,6 +8,9 @@ jQuery(document).ready(function(){
     jQuery('.boy').load('../images/nav/boy.svg');
     jQuery('.girl').load('../images/nav/girl.svg');
     jQuery('.logout').load('../images/nav/logout.svg');
+    jQuery('.courses').load('../images/nav/courses.svg');
+    jQuery('.events').load('../images/nav/events.svg');
+    jQuery('.offers').load('../images/nav/offers.svg');
 
     jQuery('.facebook').load('../images/social/facebook.svg');
     jQuery('.twitter').load('../images/social/twitter.svg');

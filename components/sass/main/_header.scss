@@ -26,6 +26,11 @@
       display: none;
     }
   }
+  .hidden-xs{
+    @include break(0,720px) {
+      display: none;
+    }
+  }
 }
 
 .main-header:after {
