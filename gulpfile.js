@@ -32,7 +32,10 @@ jsSources = [
   'components/scripts/svGet.js'
 ];
 sassSources = ['components/sass/style.scss'];
-htmlSources = [outputDir + '*.html'];
+htmlSources = [
+  outputDir + '*.html',
+  outputDir + '/**/*.html'
+];
 
 gulp.task('js', function() {
   gulp.src(jsSources)
@@ -58,7 +61,7 @@ gulp.task('watch', function() {
   gulp.watch(jsSources, ['js']);
   gulp.watch('components/sass/*.scss', ['compass']);
   gulp.watch('components/sass/**/*.scss', ['compass']);
-  gulp.watch('builds/development/*.html', ['html']);
+  gulp.watch(['builds/development/*.html','builds/development/**/*.html'], ['html']);
   gulp.watch('builds/development/images/**/*.*', ['images']);
 });
 
@@ -72,7 +75,10 @@ gulp.task('connect', function() {
 });
 
 gulp.task('html', function() {
-  gulp.src('builds/development/*.html')
+  gulp.src([
+    'builds/development/*.html',
+    'builds/development/**/*.html'
+  ])
     .pipe(gulpif(env === 'production', minifyHTML()))
     .pipe(gulpif(env === 'production', gulp.dest(outputDir)))
     .pipe(connect.reload())
