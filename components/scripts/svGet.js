@@ -18,4 +18,7 @@ jQuery(document).ready(function(){
     jQuery('.instagram').load('../images/social/instagram.svg');
     jQuery('.google-plus').load('../images/social/google-plus.svg');
     jQuery('.sharethis').load('../images/social/sharethis.svg');
+
+    jQuery('.error').load('../images/img/error.svg');
+
 });
