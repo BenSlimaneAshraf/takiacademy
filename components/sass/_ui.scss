@@ -1,0 +1,67 @@
+// _ui.scss
+// ==============
+
+%btn {
+  display: inline-block;
+  padding: 2px 40px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  font-family: $website-font;
+  user-select: none;
+  color: white;
+  outline: none;
+}
+
+@mixin button ($radius, $paddingTD, $paddingLR) {
+ @extend %btn;
+ border-radius: $radius;
+ padding: $paddingTD $paddingLR;
+}
+
+$color-btn : (
+  green : rgba(0,255,0,1), //green
+  red : rgba(255,0,0,1), //red
+  blue : rgba(0,0,255,1) //blue
+);
+
+$hover-btn : (
+  green : rgba(0,255,0,0.4), //green
+  red : rgba(255,0,0,0.4), //red
+  blue : rgba(0,0,255,0.4) //blue
+);
+
+$active-btn : (
+  green : rgba(0,255,0,0.1), //green
+  red : rgba(255,0,0,0.1), //red
+  blue : rgba(0,0,255,0.1) //blue
+);
+
+
+$radius-value : 4px;
+$paddingTD-value : 2px;
+$paddingLR-value : 40px;
+
+@each $key, $value in $color-btn {
+  .btn-#{$key} {
+    @include button($radius-value,$paddingTD-value,$paddingLR-value);
+    background-color: $value;
+  }
+}
+
+@each $key, $value in $hover-btn {
+  .btn-#{$key}:hover {
+    @include button($radius-value,$paddingTD-value,$paddingLR-value);
+    background-color: $value;
+  }
+}
+
+@each $key, $value in $active-btn {
+  .btn-#{$key}:active {
+    @include button($radius-value,$paddingTD-value,$paddingLR-value);
+    background-color: $value;
+  }
+}

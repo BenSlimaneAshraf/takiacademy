@@ -6,6 +6,7 @@
 @import "variables";
 @import "base";
 @import "mixins";
+@import "ui";
 
 //main partials
 @import "main/header";
@@ -16,4 +17,5 @@
 @import "main/footer";
 
 //views partials
+@import "index/home";
 @import "views/error";
